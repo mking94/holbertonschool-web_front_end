@@ -1,0 +1,13 @@
+/* Assigns the margin using nested declarations */
+body {
+  margin: 10px {
+    bottom: 10px;
+    top: 10px;
+  }
+}
+p {
+  margin: 10px {
+    bottom: 10px;
+    top: 10px;
+  }
+}
