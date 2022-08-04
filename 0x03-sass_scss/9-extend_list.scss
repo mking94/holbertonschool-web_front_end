@@ -2,10 +2,13 @@
 .info {
   font-size: 12px; 
 }
+
 .success {
   font-size: 12px; 
-  @extend .info; }
+  @extend .info;
+}
+
 .warning {
   font-size: 12px; 
-  @extend .info; }
-  
+  @extend .info;
+}
