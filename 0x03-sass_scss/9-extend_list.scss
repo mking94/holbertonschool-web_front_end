@@ -1,8 +1,11 @@
 /* Extended */
-.info, .success, .warning {
+.info {
   font-size: 12px; 
-> .success {
+}
+.success {
+  font-size: 12px; 
   color: #00FF00; }
-> .warning {
+.warning {
+  font-size: 12px; 
   color: #FF0000; }
-  }
+  
