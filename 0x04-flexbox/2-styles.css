@@ -378,8 +378,7 @@
   .card-category {
     color: var(--color-primary);
   }
-  /* Section Latest new
-      ============================= */
+  /* Section Latest new ============================= */
  
   .section-latest-news .row {
   flex-direction:  row-reverse;
