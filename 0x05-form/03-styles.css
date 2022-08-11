@@ -673,7 +673,7 @@ fieldset {
   padding: 0 0 2rem;
 }
 label {
- pointer: cursor;
+ cursor: pointer;
  display: block;
  white-space: nowrap;
  font-size: 1.4rem;
