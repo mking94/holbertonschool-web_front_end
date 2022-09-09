@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function strToObj(str){
+return eval('('+str+')');
+}
+function setCookies(){
+document.cookie = "Username="+document.getElementById("username").innerHTML;
+document.cookie = "Email="+document.getElementById("email").innerHTML;
+}
+function showCookies(){
+str = ""+document.cookie;
+email = str.substring(str.indexOf("email"));
+email = email.substring(0,email.indexOf(";"));
+usr = str.substring(str.indexOf("username"));
+usr = usr.substring(0,usr.indexOf(";"));
+document.getElementById("text").innerHTML = email +'<br>'+ usr;
+}
+</script>
+</head>
+
+<body>
+<h1>Login to the website</h1>
+<form action="">
+<input type="text" placeholder="Username" id="username"/>
+<input type="text" placeholder="Email" id="email"/>
+<button onclick="setCookies()">Log me in</button>
+</form>
+<h1>Cookies</h1>
+<button onclick="showCookies()">Show the cookies</button>
+<p id="text"></p>
+</body>
+
+</html>
