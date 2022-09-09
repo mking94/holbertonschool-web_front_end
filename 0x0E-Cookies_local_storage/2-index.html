@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getCookies(name){
+str = ""+document.cookie;
+if(str.indexOf(name) == -1)
+return "";
+else {
+x = str.substring(str.indexOf(name));
+x = x.substring(0,x.indexOf(";"));
+return x.substring("=");
+}
+}
+
+function setCookies(){
+var time = new Date();
+time.setDate(time.getDate()+1);
+document.cookie = "Username="+document.getElementById("username").innerHTML+"Email="+document.getElementById("email").innerHTML +"expires="+time.toString();
+}
+function showCookies(){
+str = ""+document.cookie;
+email = str.substring(str.indexOf("email"));
+email = email.substring(0,email.indexOf(";"));
+usr = str.substring(str.indexOf("username"));
+usr = usr.substring(0,usr.indexOf(";"));
+document.getElementById("text").innerHTML = email +'<br>'+ usr;
+}
+</script>
+</head>
+
+<body>
+<h1>Login to the website</h1>
+<form action="">
+<input type="text" placeholder="Username" id="username"/>
+<input type="text" placeholder="Email" id="email"/>
+<button onclick="setCookies()">Log me in</button>
+</form>
+<h1>Cookies</h1>
+<button onclick="showCookies()">Show the cookies</button>
+<p id="text"></p>
+</body>
+
+</html>
