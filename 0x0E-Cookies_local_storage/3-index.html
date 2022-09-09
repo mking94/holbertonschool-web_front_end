@@ -73,18 +73,14 @@
       hideForm();
       const msg = document.createElement('h1');
       const logOut = document.createElement('a');
-      /* add text to tags */
       msg.innerText = `Welcome ${firstname}`;
       logOut.innerText = '(logout)';
-      /* Set the attributes */
       msg.setAttribute('id', 'msg');
       logOut.setAttribute('onclick', 'deleteCookiesAndShowForm()');
-      /* Styles log Out */
       logOut.style.cursor = 'pointer';
       logOut.style.fontWeight = 'normal';
       logOut.style.fontStyle = 'italic';
       logOut.style.marginLeft = '10px';
-      /* add tags to DOM */
       msg.appendChild(logOut);
       document.body.appendChild(msg);
     }
